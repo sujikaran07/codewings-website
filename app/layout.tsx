@@ -2,6 +2,7 @@ import type React from "react"
 import type { Metadata } from "next"
 import { Geist, Geist_Mono } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
+import { GoogleAnalytics } from '@next/third-parties/google'
 import "./globals.css"
 import { SpotlightEffect } from "@/components/spotlight-effect"
 import { Toaster } from "sonner"
@@ -80,6 +81,7 @@ export default function RootLayout({
         {children}
         <Analytics />
         <Toaster position="top-right" theme="dark" richColors closeButton />
+        <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS || ''} />
       </body>
     </html>
   )
