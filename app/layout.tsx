@@ -11,6 +11,9 @@ const _geistMono = Geist_Mono({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.codewings.tech'),
+  alternates: {
+    canonical: '/',
+  },
   title: {
     default: "CodeWings Technologies | Premier Web & Mobile App Development",
     template: "%s | CodeWings Technologies",
