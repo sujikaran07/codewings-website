@@ -3,6 +3,7 @@
   "generator": "CodeWings",
   "private": true,
   "scripts": {
+    "postbuild": "next-sitemap",
     "build": "next build",
     "dev": "next dev",
     "lint": "eslint .",
